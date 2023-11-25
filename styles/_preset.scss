@@ -1,0 +1,36 @@
+//viewport
+
+//font
+@font-face {
+  font-family: "NEXON Lv1 Gothic";
+  font-style: normal;
+  font-weight: 300;
+  src: local("NEXON Lv1 Gothic"),
+  url("../assets/fonts/NEXON Lv1 Gothic OTF Light.woff") format("woff"),
+  url("../assets/fonts/NEXONLv1GothicLight.ttf") format("truetype"),
+  url("../assets/fonts/NEXON Lv1 Gothic OTF Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "NEXON Lv1 Gothic";
+  font-style: normal;
+  font-weight: 400;
+  src: local("NEXON Lv1 Gothic"),
+  url("../assets/fonts/NEXON Lv1 Gothic OTF.woff") format("woff"),
+  url("../assets/fonts/NEXONLv1GothicRegular.ttf") format("truetype"),
+  url("../assets/fonts/NEXON Lv1 Gothic OTF.otf") format("opentype");
+}
+@font-face {
+  font-family: "NEXON Lv1 Gothic";
+  font-style: normal;
+  font-weight: 700;
+  src: local("NEXON Lv1 Gothic"),
+  url("../assets/fonts/NEXON Lv1 Gothic OTF Bold.woff") format("woff"),
+  url("../assets/fonts/NEXONLv1GothicBold.ttf") format("truetype"),
+  url("../assets/fonts/NEXON Lv1 Gothic OTF Bold.otf") format("opentype");
+}
+
+//color
+$white-primary: #FFF6E1;
+$pink-primary: #FF617C;
+$pink-darker: #E63E5A;
+$pink-shadow: #BF2F47;

@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "NEXON Lv1 Gothic";
+  font-style: normal;
+  font-weight: 300;
+  src: local("NEXON Lv1 Gothic"), url("../assets/fonts/NEXON Lv1 Gothic OTF Light.woff") format("woff"), url("../assets/fonts/NEXONLv1GothicLight.ttf") format("truetype"), url("../assets/fonts/NEXON Lv1 Gothic OTF Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "NEXON Lv1 Gothic";
+  font-style: normal;
+  font-weight: 400;
+  src: local("NEXON Lv1 Gothic"), url("../assets/fonts/NEXON Lv1 Gothic OTF.woff") format("woff"), url("../assets/fonts/NEXONLv1GothicRegular.ttf") format("truetype"), url("../assets/fonts/NEXON Lv1 Gothic OTF.otf") format("opentype");
+}
+@font-face {
+  font-family: "NEXON Lv1 Gothic";
+  font-style: normal;
+  font-weight: 700;
+  src: local("NEXON Lv1 Gothic"), url("../assets/fonts/NEXON Lv1 Gothic OTF Bold.woff") format("woff"), url("../assets/fonts/NEXONLv1GothicBold.ttf") format("truetype"), url("../assets/fonts/NEXON Lv1 Gothic OTF Bold.otf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "NEXON Lv1 Gothic", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  height: 100dvh;
+}
+
+h1 {
+  font-size: 3.75rem;
+  line-height: 125%;
+}
+
+#app {
+  width: 100%;
+  max-width: 36rem;
+  margin: 0 auto;
+  background: #FF617C;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
+  color: #FFF6E1;
+}
+#app > main, #app footer {
+  width: 100%;
+}
+#app > main {
+  padding-bottom: 10rem;
+}
+#app > main > section {
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app > main > section > .section-inner {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#app > main > section > .section-inner > .image-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#app > main > section > .section-inner > .text-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#app > main > section#intro {
+  min-height: 100svh;
+}
+#app > main > section#intro .logo-symbol {
+  width: 12.5rem;
+}
+#app > main > section#intro .image-burger {
+  width: 100%;
+  max-width: 18.75rem;
+  filter: drop-shadow(0 1rem 1rem #BF2F47);
+  transform: translateY(-2.5rem);
+}
+#app > main > section#brand > .section-inner {
+  gap: 3rem;
+}
+#app > footer {
+  padding: 0 2rem;
+  background: #E63E5A;
+}
+#app > footer > .footer-inner {
+  width: 100%;
+  padding: 1.5rem 0;
+}
+#app > footer > .footer-inner > span {
+  line-height: 200%;
+}
+
+/*# sourceMappingURL=common.css.map */
