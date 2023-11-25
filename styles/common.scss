@@ -40,6 +40,21 @@ span {
   align-items: center;
   color: $white-primary;
 
+  > .swiper-pagination {
+    width: 100%;
+    max-width: 30rem;
+    height: .25rem;
+    position: fixed;
+    top: 0;
+    left: unset;
+    background: $pink-darker;
+
+    > .swiper-pagination-progressbar-fill {
+      border-radius: 2rem !important;
+      background: $white-primary;
+    }
+  }
+
   > .swiper {
     width: 100%;
     max-width: 30rem;
@@ -55,6 +70,7 @@ span {
       > .section-inner {
         width: 100%;
         height: 100%;
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -94,6 +110,13 @@ span {
             width: calc(18.75rem * .8);
           }
         }
+
+        .angle {
+          width: 2rem;
+          position: absolute;
+          bottom: 2rem;
+          animation: angle 1s ease infinite alternate;
+        }
       }
 
       &#brand {
@@ -123,6 +146,15 @@ span {
         padding: 1rem 0;
       }
     }
+  }
+}
+
+@keyframes angle {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(.5rem);
   }
 }
 

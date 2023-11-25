@@ -60,6 +60,19 @@ span {
   align-items: center;
   color: #FFF6E1;
 }
+#app > .swiper-pagination {
+  width: 100%;
+  max-width: 30rem;
+  height: 0.25rem;
+  position: fixed;
+  top: 0;
+  left: unset;
+  background: #E63E5A;
+}
+#app > .swiper-pagination > .swiper-pagination-progressbar-fill {
+  border-radius: 2rem !important;
+  background: #FFF6E1;
+}
 #app > .swiper {
   width: 100%;
   max-width: 30rem;
@@ -75,6 +88,7 @@ span {
 #app > .swiper .swiper-slide:not(footer) > .section-inner {
   width: 100%;
   height: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,6 +126,12 @@ span {
     width: 15rem;
   }
 }
+#app > .swiper .swiper-slide:not(footer)#intro .angle {
+  width: 2rem;
+  position: absolute;
+  bottom: 2rem;
+  animation: angle 1s ease infinite alternate;
+}
 #app > .swiper .swiper-slide:not(footer)#brand > .section-inner {
   gap: 3rem;
 }
@@ -133,6 +153,15 @@ span {
   width: 100%;
   height: 100%;
   padding: 1rem 0;
+}
+
+@keyframes angle {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(0.5rem);
+  }
 }
 
 /*# sourceMappingURL=common.css.map */

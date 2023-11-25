@@ -5,5 +5,14 @@ window.addEventListener("load", () => {
         speed: 750,
         mousewheel: true,
         slidesPerView: "auto",
+        slidePerGroup: 1,
+        pagination: {
+            el: "#app > .swiper-pagination",
+            type: "progressbar",
+            progressbarOpposite: true
+        },
+        navigation: {
+            nextEl: "#intro .angle"
+        }
     });
 });
