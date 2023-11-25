@@ -1,4 +1,9 @@
 //viewport
+@mixin vp-sm {
+  @media all and (width < 360px) {
+    @content
+  }
+}
 
 //font
 @font-face {

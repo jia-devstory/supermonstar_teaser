@@ -1,14 +1,9 @@
 window.addEventListener("load", () => {
 
-    let observer = new IntersectionObserver((e) => {
+    const swiper = new Swiper("#app > .swiper", {
+        direction: "vertical",
+        speed: 750,
+        mousewheel: true,
+        slidesPerView: "auto",
     });
-
-    const intro = document.querySelector("#intro");
-    const introImgBurger = intro.querySelector(".image-burger");
-
-    observer.observe(introImgBurger);
-
-    if (introImgBurger.isIntersecting) {
-        introImgBurger.style.opacity = 0;
-    }
-})
+});

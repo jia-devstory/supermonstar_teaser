@@ -36,77 +36,103 @@ h1 {
   font-size: 3.75rem;
   line-height: 125%;
 }
+@media all and (width < 360px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+span {
+  font-size: 1rem;
+  line-height: 200%;
+}
+@media all and (width < 360px) {
+  span {
+    font-size: 0.8rem;
+  }
+}
 
 #app {
   width: 100%;
-  max-width: 36rem;
-  margin: 0 auto;
-  background: #FF617C;
-  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #FFF6E1;
 }
-#app > main, #app footer {
+#app > .swiper {
   width: 100%;
+  max-width: 30rem;
+  height: 100%;
+  background: #FF617C;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.6);
 }
-#app > main {
-  padding-bottom: 10rem;
-}
-#app > main > section {
-  width: 100%;
-  padding: 0 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#app > main > section > .section-inner {
+#app > .swiper .swiper-slide:not(footer) {
   width: 100%;
   height: 100%;
-  padding: 5rem 0;
-  position: relative;
+  padding: 0 1rem;
+}
+#app > .swiper .swiper-slide:not(footer) > .section-inner {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#app > main > section > .section-inner > .image-wrapper {
+#app > .swiper .swiper-slide:not(footer) > .section-inner > .image-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#app > main > section > .section-inner > .text-wrapper {
+#app > .swiper .swiper-slide:not(footer) > .section-inner > .text-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#app > main > section#intro {
-  min-height: 100svh;
-}
-#app > main > section#intro .logo-symbol {
+#app > .swiper .swiper-slide:not(footer)#intro .logo-symbol {
   width: 12.5rem;
 }
-#app > main > section#intro .image-burger {
-  width: 100%;
-  max-width: 18.75rem;
+@media all and (width < 360px) {
+  #app > .swiper .swiper-slide:not(footer)#intro .logo-symbol {
+    width: 10rem;
+  }
+}
+#app > .swiper .swiper-slide:not(footer)#intro .image-burger {
+  width: 18.75rem;
   filter: drop-shadow(0 1rem 1rem #BF2F47);
   transform: translateY(-2.5rem);
 }
-#app > main > section#brand > .section-inner {
+@media all and (width < 360px) {
+  #app > .swiper .swiper-slide:not(footer)#intro .image-burger {
+    width: 15rem;
+  }
+}
+#app > .swiper .swiper-slide:not(footer)#brand > .section-inner {
   gap: 3rem;
 }
-#app > footer {
+#app > .swiper .swiper-slide:not(footer)#brand > .section-inner > .logo-full {
+  width: 16.625rem;
+}
+@media all and (width < 360px) {
+  #app > .swiper .swiper-slide:not(footer)#brand > .section-inner > .logo-full {
+    width: 13.3rem;
+  }
+}
+#app > .swiper footer {
+  width: 100%;
+  height: auto !important;
   padding: 0 2rem;
   background: #E63E5A;
 }
-#app > footer > .footer-inner {
+#app > .swiper footer > .footer-inner {
   width: 100%;
-  padding: 1.5rem 0;
-}
-#app > footer > .footer-inner > span {
-  line-height: 200%;
+  height: 100%;
+  padding: 1rem 0;
 }
 
 /*# sourceMappingURL=common.css.map */
